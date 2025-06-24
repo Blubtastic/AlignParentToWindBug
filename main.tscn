@@ -77,10 +77,10 @@ simulation_precision = 30
 pinned_points = [0, 1]
 attachments/0/point_index = 0
 attachments/0/spatial_attachment_path = NodePath("../Marker1")
-attachments/0/offset = Vector3(0.0138054, 0.0060505, -0.0102021)
+attachments/0/offset = Vector3(0.013806, 0.00605002, -0.0102021)
 attachments/1/point_index = 1
 attachments/1/spatial_attachment_path = NodePath("../Marker0")
-attachments/1/offset = Vector3(0.0138055, 0.00243601, -0.0102021)
+attachments/1/offset = Vector3(0.013806, 0.00243607, -0.0102021)
 
 [node name="Marker1" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.500862, 0)
@@ -109,6 +109,21 @@ offset_right = 700.0
 offset_bottom = 90.0
 theme_override_font_sizes/font_size = 24
 text = "move_whatever()"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 201.0
+offset_right = 481.0
+offset_bottom = 446.0
+theme_override_font_sizes/font_size = 20
+text = "Try rotating the WindSourcePath in the editor 
+while the game is not running. This should 
+set the wind direction correctly (which it does). 
+
+Try pressing the buttons above in-game, which 
+updates the WindSourcePath rotation. 
+This however, does not update the 
+wind direction."
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
